@@ -1,0 +1,6 @@
+com\jason\learn\util\ApacheHttpClient.class
+com\jason\learn\constants\PoloniexConstant.class
+com\jason\learn\job\ScheduleTask.class
+com\jason\learn\Example.class
+com\jason\learn\util\ApacheHttpClient$1.class
+com\jason\learn\job\HttpTask.class

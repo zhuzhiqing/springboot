@@ -1,0 +1,14 @@
+CREATE TABLE `ticker`(
+  `id` BIGINT NOT NULL AUTO_INCREMENT COMMENT '主键',
+  `currency_id` INT NOT NULL COMMENT '货币代码',
+  `price` INT NOT NULL COMMENT '货币价格',
+  `lowest_ask` INT NOT NULL COMMENT '卖盘最低价',
+  `higest_bid` INT NOT NULL COMMENT '买盘最高价',
+  `percent_change` INT NOT NULL DEFAULT 0 COMMENT '价格波动',
+  `base_vol` INT NOT NULL DEFAULT 0 COMMENT '成交量',
+  `quote_vol` INT NOT NULL DEFAULT 0,
+  `high_24h` INT NOT NULL DEFAULT 0 COMMENT '24小时最高价',
+  `low_24h` INT NOT NULL DEFAULT 0 COMMENT '24小时最低价',
+  `utm_create` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT '创建时间',
+  PRIMARY KEY (`id`)
+) ENGINE = INNODB AUTO_INCREMENT=1 DEFAULT CHARSET = utf8 COMMENT '历史价格,计价货币单位BTC'
