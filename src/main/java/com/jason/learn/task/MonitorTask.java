@@ -1,4 +1,4 @@
-package com.jason.learn.job;
+package com.jason.learn.task;
 
 import com.jason.learn.util.ApacheHttpClient;
 import org.apache.http.pool.PoolStats;
